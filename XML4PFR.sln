@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML4PFR", "XML4PFR\XML4PFR.csproj", "{A37F128D-F3A8-4870-AE62-3A0215080937}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A37F128D-F3A8-4870-AE62-3A0215080937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37F128D-F3A8-4870-AE62-3A0215080937}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37F128D-F3A8-4870-AE62-3A0215080937}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37F128D-F3A8-4870-AE62-3A0215080937}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB506070-7562-451D-87FA-E52825A4F865}
+	EndGlobalSection
+	GlobalSection(MercurialSourceControlSolutionProperties) = preSolution
+		SolutionIsControlled = True
+		SolutionBindings = <Solution Location In Database>
+	EndGlobalSection
+EndGlobal
