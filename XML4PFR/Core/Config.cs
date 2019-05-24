@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Xml.Serialization;
-using das.Logger;
+using das.Extensions.Logger;
 
 namespace XML4PFR.Core
 {
