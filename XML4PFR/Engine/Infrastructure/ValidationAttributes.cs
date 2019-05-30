@@ -11,14 +11,15 @@ namespace XML4PFR.Engine.Infrastructure
         public ValuesAttribute(params string[] validValues)
         {
             _validValues = validValues;
-            ErrorMessage = $"Допустимые значения для поля [{string.Join(", ", validValues)}]";
         }
 
-        public override bool IsValid(object value)
+        protected override ValidationResult IsValid(object value, ValidationContext context)
         {
-            if (value is string s)
-                return _validValues.Any(v => v.Equals(s, StringComparison.InvariantCultureIgnoreCase));
-            return false;
+            ErrorMessage = $"Для поля {context.MemberName} допустимые значения [{string.Join(", ", _validValues)}]";
+
+            if (value is string s && _validValues.Any(v => v.Equals(s, StringComparison.InvariantCultureIgnoreCase)))
+                    return ValidationResult.Success;
+            return new ValidationResult(ErrorMessage);
         }
     }
 }
