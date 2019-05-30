@@ -1,13 +1,13 @@
 ﻿using System.Text.RegularExpressions;
-using das.Data.Annotation;
+using das.Extensions.Adapter.Annotation;
 
 namespace XML4PFR.Engine.Infrastructure
 {
-    public class SnilsView : FormatterAttribute
+    public class SnilsFormatting : FormattingAttribute
     {
         private readonly Regex _regex;
 
-        public SnilsView()
+        public SnilsFormatting()
         {
             _regex = new Regex(@"(\d{3})(\d{3})(\d{3})(\d{2})");
         }
@@ -19,7 +19,7 @@ namespace XML4PFR.Engine.Infrastructure
         }
     }
 
-    public class GenderView : FormatterAttribute
+    public class GenderFormatting : FormattingAttribute
     {
         public override object Format(object value)
         {

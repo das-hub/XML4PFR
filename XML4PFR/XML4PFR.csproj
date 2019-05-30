@@ -40,10 +40,11 @@
     <ApplicationIcon>processes_5760.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="das.Adapter">
-      <HintPath>..\..\das.Adapter\das.Adapter\bin\Debug\das.Adapter.dll</HintPath>
+    <Reference Include="das.Extensions.Adapter">
+      <HintPath>..\..\das.Extensions.Adapter\das.Extensions.Adapter\bin\Debug\das.Extensions.Adapter.dll</HintPath>
     </Reference>
-    <Reference Include="das.Extensions.Logger">
+    <Reference Include="das.Extensions.Logger, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\das.Extensions.Logger\das.Extensions.Logger\bin\Debug\das.Extensions.Logger.dll</HintPath>
     </Reference>
     <Reference Include="Spire.Common, Version=1.2.788.14040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
@@ -59,6 +60,7 @@
       <HintPath>..\packages\FreeSpire.XLS.8.3.0\lib\net40\Spire.XLS.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -77,7 +79,7 @@
     <Compile Include="Engine\Handlers\IdentificationExcelStrategy.cs" />
     <Compile Include="Engine\Handlers\IStrategy.cs" />
     <Compile Include="Engine\Handlers\ValidationCsvStrategy.cs" />
-    <Compile Include="Engine\Infrastructure\FormatterAttributes.cs" />
+    <Compile Include="Engine\Infrastructure\FormattingAttributes.cs" />
     <Compile Include="Engine\Infrastructure\ValidationAttributes.cs" />
     <Compile Include="Engine\Infrastructure\SpireXlsLoader.cs" />
     <Compile Include="Engine\Handlers\ValidationExcelStrategy.cs" />
@@ -89,6 +91,7 @@
     <Compile Include="Extensions\Forms.cs" />
     <Compile Include="Engine\Requests\ValidationRequest.cs" />
     <Compile Include="Engine\Builders\ValidationRequestBuilder.cs" />
+    <Compile Include="Extensions\IEnumerableEx.cs" />
     <Compile Include="fmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +136,9 @@
     <None Include="XML4PFR.cfg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\das.Extensions.Adapter\das.Extensions.Adapter\bin\Debug\das.Extensions.Adapter.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using das.Data.Adapter;
-using das.Data.Annotation;
+using das.Extensions.Adapter;
+using XML4PFR.Extensions;
 
 namespace XML4PFR.Engine.Builders
 {

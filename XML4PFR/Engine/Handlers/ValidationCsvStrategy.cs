@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using das.Data.Adapter;
+using das.Extensions.Adapter;
 using XML4PFR.Engine.Builders;
 using XML4PFR.Models;
 
