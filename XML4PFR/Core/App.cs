@@ -17,6 +17,6 @@ namespace XML4PFR.Core
         }
 
         public static Config Config = Config.Load(Path.Combine(Paths.ROOT, $"{Name}.cfg"));
-        public static ILogger Log = LoggerFactory.CreateFactory(Config.LoggerSetting).CreateLogger();
+        public static ILogger Log = LoggerFactory.CreateFactory(Config.LoggerProvider).CreateLogger();
     }
 }

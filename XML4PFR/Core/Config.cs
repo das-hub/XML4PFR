@@ -13,7 +13,7 @@ namespace XML4PFR.Core
         public Config()
         {
             Providers = new[]{Provider.Default};
-            LoggerSetting = LoggerSetting.Empty;
+            LoggerProvider = LoggerProvider.Empty;
         }
 
         public static Config Load(string file)
@@ -45,7 +45,7 @@ namespace XML4PFR.Core
         }
 
         [XmlElement("logger")]
-        public LoggerSetting LoggerSetting { get; set; }
+        public LoggerProvider LoggerProvider { get; set; }
 
         [XmlArray("providers")]
         [XmlArrayItem("provider")]
