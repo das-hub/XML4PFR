@@ -16,7 +16,7 @@ namespace XML4PFR.Engine.Infrastructure
         public override object Format(object value)
         {
             string s = value as string;
-            return _regex.Replace(s.Clean(), "$1-$2-$3_$4");
+            return _regex.Replace(s.Clean(), "$1-$2-$3 $4");
         }
     }
 
