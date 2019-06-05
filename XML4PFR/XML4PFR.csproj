@@ -92,6 +92,7 @@
     <Compile Include="Engine\Requests\ValidationRequest.cs" />
     <Compile Include="Engine\Builders\ValidationRequestBuilder.cs" />
     <Compile Include="Extensions\IEnumerableEx.cs" />
+    <Compile Include="Extensions\StringEx.cs" />
     <Compile Include="fmMain.cs">
       <SubType>Form</SubType>
     </Compile>

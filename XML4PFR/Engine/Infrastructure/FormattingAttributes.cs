@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using das.Extensions.Adapter.Annotation;
+using XML4PFR.Extensions;
 
 namespace XML4PFR.Engine.Infrastructure
 {
@@ -15,7 +16,7 @@ namespace XML4PFR.Engine.Infrastructure
         public override object Format(object value)
         {
             string s = value as string;
-            return _regex.Replace(s, "$1-$2-$3_$4");
+            return _regex.Replace(s.Clean(), "$1-$2-$3_$4");
         }
     }
 

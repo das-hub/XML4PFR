@@ -9,7 +9,7 @@ namespace XML4PFR.Models
     public class ValidationRecordCsv : Record, IValidationRecord
     {
         public string Id => $"{Index:000000}";
-        [Bind(1), Required, MinLength(11), SnilsFormatting] public string Snils { get; set; }
+        [Bind(1), Required, Snils, SnilsFormatting] public string Snils { get; set; }
         [Bind(2), MaxLength(40)] public string Surname { get; set; }
         [Bind(3), MaxLength(40)] public string Name { get; set; }
         [Bind(4), MaxLength(40)] public string MiddleName { get; set; }
