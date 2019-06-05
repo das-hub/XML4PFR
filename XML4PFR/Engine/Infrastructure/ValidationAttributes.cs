@@ -31,7 +31,9 @@ namespace XML4PFR.Engine.Infrastructure
         {
             string snils = value as string;
 
-            Match match = _pattern.Match(snils?.Clean() ?? "");
+            if (snils.IsNullOrEmpty()) return ValidationResult.Success;
+
+            Match match = _pattern.Match(snils.Clean());
             
             return match.Success ? ValidationResult.Success : new ValidationResult($"Поле СНИЛС должно содержать только 11 цифр, текущее значение [{snils}]");
         }

@@ -8,5 +8,10 @@ namespace XML4PFR.Extensions
         {
             return Regex.Replace(value.Trim(), "\\s|-|\\.|_", string.Empty);
         }
+
+        public static bool IsNullOrEmpty(this string value)
+        {
+            return string.IsNullOrEmpty(value);
+        }
     }
 }
