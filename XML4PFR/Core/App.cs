@@ -2,6 +2,7 @@
 using System.IO;
 using System.Reflection;
 using das.Extensions.Logger;
+using das.Extensions.Logger.Abstractions;
 
 namespace XML4PFR.Core
 {
