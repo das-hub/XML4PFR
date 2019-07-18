@@ -59,9 +59,9 @@
             // bntSelectSourceDirectory
             // 
             this.bntSelectSourceDirectory.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bntSelectSourceDirectory.Location = new System.Drawing.Point(611, 130);
+            this.bntSelectSourceDirectory.Location = new System.Drawing.Point(611, 123);
             this.bntSelectSourceDirectory.Name = "bntSelectSourceDirectory";
-            this.bntSelectSourceDirectory.Size = new System.Drawing.Size(51, 26);
+            this.bntSelectSourceDirectory.Size = new System.Drawing.Size(51, 38);
             this.bntSelectSourceDirectory.TabIndex = 3;
             this.bntSelectSourceDirectory.Text = "...";
             this.bntSelectSourceDirectory.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@
             // btnSelectDirectory
             // 
             this.btnSelectDirectory.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnSelectDirectory.Location = new System.Drawing.Point(612, 180);
+            this.btnSelectDirectory.Location = new System.Drawing.Point(611, 173);
             this.btnSelectDirectory.Name = "btnSelectDirectory";
-            this.btnSelectDirectory.Size = new System.Drawing.Size(50, 26);
+            this.btnSelectDirectory.Size = new System.Drawing.Size(51, 38);
             this.btnSelectDirectory.TabIndex = 5;
             this.btnSelectDirectory.Text = "...";
             this.btnSelectDirectory.UseVisualStyleBackColor = true;
